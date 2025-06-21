@@ -1,0 +1,13 @@
+services:
+  nm-toolbox:
+    container_name: nm-toolbox
+    stop_grace_period: 0s
+    build:
+      context: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./dotfiles/.zshrc:/home/nm/.zshrc
+      - ./dotfiles/.chromaterm.yml:/home/nm/.chromaterm.yml
+      - ./dotfiles/.oh-my-zsh/custom/themes:/home/nm/.oh-my-zsh/custom/themes
+      - ./local-stuff:/home/nm/local-stuff
