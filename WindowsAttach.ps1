@@ -18,5 +18,5 @@ $shortcut.Description = "Launches a zsh shell in the nm-toolbox container."
 $shortcut.IconLocation = $iconPath
 $shortcut.Save()
 
-Write-Host "Success! Shortcut 'Dev Container.lnk' has been created in your user directory ($userProfilePath)."
+Write-Host "Success! Shortcut 'nm-toolbox.lnk' has been created in your user directory ($userProfilePath)."
 Write-Host "You can now find it there, right-click it, and choose 'Pin to taskbar'."
