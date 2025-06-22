@@ -7,7 +7,7 @@ if (-not (Test-Path $iconPath)) {
 }
 
 $userProfilePath = [System.Environment]::GetFolderPath('UserProfile')
-$shortcutPath = Join-Path -Path $userProfilePath -ChildPath "Dev Container.lnk"
+$shortcutPath = Join-Path -Path $userProfilePath -ChildPath "nm-toolbox.lnk"
 
 $shell = New-Object -ComObject WScript.Shell
 $shortcut = $shell.CreateShortcut($shortcutPath)
